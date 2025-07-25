@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Backend Developer</title>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body class="bg-pastel-purple text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-sans">
+    <!-- Dark Mode Toggle -->
+    <div class="fixed top-4 right-4 z-50">
+        <button id="toggleDark" class="bg-white dark:bg-gray-800 text-accent font-bold py-2 px-4 rounded-full shadow-md border border-accent">
+        🌙 / ☀️
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-pastel-yellow to-pastel-purple dark:from-gray-800 dark:to-gray-900 px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">Ciao, sono <span class="text-accent">Georgiana</span></h1>
+        <p class="text-lg md:text-xl mb-6 text-center max-w-xl">Backend Web Developer con passione per PHP, Python e API scalabili. Mi piace costruire soluzioni affidabili e ben strutturate.</p>
+        <a href="#progetti" class="bg-accent hover:bg-purple-600 text-white font-semibold py-2 px-6 rounded-2xl shadow-md transition">Guarda i miei progetti</a>
+    </section>
+
+    <!-- Chi Sono -->
+    <section class="py-16 px-4 max-w-4xl mx-auto animate-slide-in">
+        <h2 class="text-3xl font-bold text-accent mb-4">Chi sono</h2>
+        <p class="text-lg leading-relaxed mb-6">
+        Ciao! Sono una sviluppatrice backend con un debole per Python e PHP, i linguaggi con cui mi trovo più a mio agio. 
+        Ho esplorato anche un po' di C#, giusto quel tanto da farmi un'idea. 
+        Ho iniziato con Laravel (il mio primo amore tra i framework!), 
+        anche se ormai è un po' che non lo uso. Lavoro con API RESTful e MySQL, 
+        e non mi tiro indietro quando c'è da dare una mano sul frontend: HTML, CSS e JavaScript sono vecchi amici.
+        </p>
+        <div class="flex flex-wrap gap-3">
+        <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-sm">PHP</span>
+        <span class="bg-yellow-200 text-yellow-800 px-3 py-1 rounded-full text-sm">Python</span>
+        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">C#</span>
+        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Laravel</span>
+        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+        <span class="bg-yellow-200 text-yellow-800 px-3 py-1 rounded-full text-sm">API REST</span>
+        <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">HTML</span>
+        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">CSS</span>
+        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+        </div>
+    </section>
+
+    <!-- Progetti -->
+    <section id="progetti" class="py-16 bg-pastel-yellow dark:bg-gray-800 px-4">
+        <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-accent mb-8">Progetti</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Progetto 1 -->
+            <div class="bg-white dark:bg-gray-700 shadow-md rounded-2xl p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold text-accent mb-2">Sito vetrina per estetista (progetto personale)</h3>
+            <p class="mb-4 text-gray-700 dark:text-gray-200">Un sito vetrina creato per un'estetista immaginaria, 
+                fatto un po' per divertimento e un po' per mostrare cosa so fare con design e sviluppo web. 
+                Contenuti e immagini sono tutti di fantasia, giusto per dare un'idea di stile e funzionalità!
+            </p>
+            <a href="project/sito-vetrina-estetista/index.html" class="text-accent underline">Vedi progetto</a>
+            <!-- <a href="#" class="text-accent underline">Vedi su GitHub</a> -->
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contatti -->
+    <section class="py-16 px-4 bg-pastel-purple dark:bg-gray-900">
+        <div class="max-w-xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-accent mb-4">Contattami</h2>
+        <p class="mb-4">Hai un progetto interessante o vuoi collaborare?</p>
+        <a href="geolaz25@gmail.com" class="bg-pastel-yellow dark:bg-gray-700 hover:bg-yellow-200 text-accent font-semibold py-2 px-6 rounded-2xl shadow-md transition">
+            Scrivimi
+        </a>
+        <div class="mt-6 flex justify-center gap-6">
+            <a href="#" class="text-accent hover:underline">LinkedIn</a>
+            <a href="#" class="text-accent hover:underline">GitHub</a>
+        </div>
+        </div>
+    </section>
+
+    <footer class="py-6 text-center text-sm text-gray-500 dark:text-gray-400">
+        © 2025 Georgiana Lazar. Tutti i diritti riservati.
+    </footer>
+
+    <!--===== MAIN JS =====-->
+    <script src="js/main.js"></script>
+</body>
+</html>

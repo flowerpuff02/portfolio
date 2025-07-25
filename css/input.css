@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-pastel-purple: oklch(0.9191 0.0352 303.8);
+  --color-pastel-yellow: oklch(0.9773 0.0373 95.44);
+  --color-accent: oklch(0.7217 0.1767 305.5);
+}
+
+.animate-fade-in {
+animation: fadeIn 1.2s ease-out;
+}
+.animate-slide-in {
+animation: slideIn 1.2s ease-out;
+}
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+from { opacity: 0; transform: translateX(-20px); }
+to { opacity: 1; transform: translateX(0); }
+}
